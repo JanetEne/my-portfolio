@@ -1,9 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
+import CopyRight from '@/components/CopyRight';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
-  title: "404 || Tokyo - Personal Portfolio React Nextjs Template",
+  title: '404 | Janet Ogenyi',
 };
+
 const NotFound = () => {
   return (
     <>
@@ -15,26 +17,15 @@ const NotFound = () => {
             <div className="logo">
               <Link className="navbar-brand" href="/">
                 <Image
-                  width={126}
-                  height={22}
-                  src="/img/logo/dark.png"
+                  width={140}
+                  height={40}
+                  src="/img/me/Janet-logo.png"
                   alt="brand"
                 />
               </Link>
             </div>
             {/* END LOGO */}
-            <div className="copyright">
-              <p>
-                &copy; 2021 Tokyo <br /> Created by
-                <a
-                  href="https://themeforest.net/user/ib-themes"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ib-Themes
-                </a>
-              </p>
-            </div>
+            <CopyRight />
             {/* END COPYRIGHT */}
           </div>
         </div>
@@ -61,18 +52,7 @@ const NotFound = () => {
         {/* END RIGHT PART */}
 
         <footer className="footer-wrapper">
-          <div className="copyright">
-            <p>
-              &copy; 2021 Tokyo Created by
-              <a
-                href="https://themeforest.net/user/ib-themes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ib-Themes
-              </a>
-            </p>
-          </div>
+          <CopyRight />
           {/* END COPYRIGHT */}
         </footer>
       </div>
