@@ -1,11 +1,8 @@
-"use client";
+'use client';
 
-import Testimonial from "./Testimonial";
-import Intro from "./Intro";
-import KnowledgeInterest from "./KnowledgeInterest";
-import PersonalInfo from "./PersonalInfo";
-import Resume from "./Resume";
-import Skills from "./Skills";
+import Intro from './Intro';
+import Skills from './Skills';
+import Resume from './Resume';
 
 const AboutMain = () => {
   return (
@@ -41,7 +38,16 @@ const AboutMain = () => {
           </div>
         </div>
       </div>
+
+      <div className="tokyo_tm_skillbox">
+        <div className="container">
+          <div className="in">
+            <Skills />
+          </div>
+        </div>
+      </div>
       {/* End tokyo_tm_resumebox */}
+
       {/* /ABOUT */}
     </>
   );

@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Social from '../Social';
@@ -19,7 +20,7 @@ const Home = () => {
           </div>
           {/* END AVATAR */}
           <div className="details">
-            <h3 className="name">I'm Janet Ogenyi</h3>
+            <h3 className="name">Janet Ogenyi</h3>
             <h4 className="typer">
               <ReactTyped
                 strings={['Software Engineer']}
@@ -29,11 +30,11 @@ const Home = () => {
             </h4>
 
             <p className="job">
-              I am a dedicated Web & Mobile Engineer committed to creating
-              inclusive user experiences. My expertise spans Fintech,
-              e-commerce, and law firms, where I leverage React Native, ReactJs,
-              NextJs, JavaScript, and TypeScript to transform ideas into
-              accessible and aesthetic interfaces.
+              A Software Engineer committed to creating inclusive user
+              experiences. My expertise spans Fintech, e-commerce, and law
+              firms, where I leverage React Native, ReactJs, NextJs, JavaScript,
+              and TypeScript to transform ideas into accessible and aesthetic
+              interfaces.
             </p>
             {/* END JOB */}
             <Social />

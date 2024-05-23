@@ -1,81 +1,53 @@
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const Skills = () => {
-  const skillsContent = [
+  const knowledgeContent = [
     {
       id: 1,
-      colClass: "left",
-      title: "Programming Skills",
-      progress: [
-        {
-          id: 1,
-          skillName: "WordPress",
-          skillValue: "95",
-        },
-        {
-          id: 2,
-          skillName: "JavaScript",
-          skillValue: "80",
-        },
-        {
-          id: 3,
-          skillName: "Angular",
-          skillValue: "90",
-        },
-      ],
-    },
-    {
-      id: 2,
-      colClass: "right",
-      title: "Language Skills",
-      progress: [
-        {
-          id: 1,
-          skillName: "English",
-          skillValue: "90",
-        },
-        {
-          id: 2,
-          skillName: "Russian",
-          skillValue: "90",
-        },
-        {
-          id: 3,
-          skillName: "Arabic",
-          skillValue: "85",
-        },
+      colClass: 'left',
+      title: 'Technologies & Skills',
+      content: [
+        'Javascript',
+        'Typescript',
+        'Reactjs',
+        'Nextjs',
+        'React Native',
+        'Vite',
+        'React/Tanstack Query',
+        'Tailwind CSS',
+        'SCSS',
+        'Styled Components',
+        'Nodejs',
+        'Git',
       ],
     },
   ];
+
   return (
     <>
-      {skillsContent.map((item) => (
+      {knowledgeContent.map((item) => (
         <div className={item.colClass} key={item.id}>
           <div className="tokyo_section_title">
             <h3>{item.title}</h3>
           </div>
-
-          <div className="tokyo_progress">
-            {item?.progress?.map((skill) => (
-              <div
-                className="progress_inner"
-                data-value={item.skillValue}
-                key={skill.id}
-              >
-                <span>
-                  <span className="label">{skill?.skillName}</span>
-                  <span className="number">{skill?.skillValue}%</span>
-                </span>
-                <div className="background">
-                  <div className="bar">
-                    <div
-                      className="bar_in"
-                      style={{ width: skill?.skillValue + "%" }}
+          <div className="tokyo_tm_skill_list">
+            <ul>
+              {item.content.map((val, i) => (
+                <li key={i}>
+                  <span>
+                    <Image
+                      width={10}
+                      height={10}
+                      className="svg"
+                      src="/img/svg/rightarrow.svg"
+                      alt="arrow"
                     />
-                  </div>
-                </div>
-              </div>
-            ))}
+                    {val}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       ))}

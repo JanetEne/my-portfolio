@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import sidebarData from "../../data/sidebarData";
-import CopyRight from "../CopyRight";
-import { isActiveLink } from "../../utilis/linkActiveChecker";
+import Image from 'next/image';
+import Link from 'next/link';
+import sidebarData from '../../data/sidebarData';
+import CopyRight from '../CopyRight';
+import { isActiveLink } from '../../utilis/linkActiveChecker';
 
-import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Sidebar = () => {
   const router = usePathname();
@@ -21,8 +21,8 @@ const Sidebar = () => {
           <div className="logo">
             <Link className="navbar-brand" href="/">
               <Image
-                width={140}
-                height={40}
+                width={145}
+                height={45}
                 src="/img/me/Janet-logo.png"
                 alt="brand"
               />
@@ -34,8 +34,8 @@ const Sidebar = () => {
             <div
               className={
                 click
-                  ? "hamburger hamburger--collapse-r is-active"
-                  : "hamburger"
+                  ? 'hamburger hamburger--collapse-r is-active'
+                  : 'hamburger'
               }
             >
               <div className="hamburger-box">
@@ -49,18 +49,9 @@ const Sidebar = () => {
       {/* Header */}
 
       {/* START LEFT MENU CONTENT */}
-      <div className={click ? "leftpart active" : "leftpart"}>
+      <div className={click ? 'leftpart active' : 'leftpart'}>
         <div className="leftpart_inner">
-          <div className="logo">
-            <Link className="navbar-brand" href="/">
-              <Image
-                width={145}
-                height={45}
-                src="/img/me/Janet-logo.png"
-                alt="brand"
-              />
-            </Link>
-          </div>
+          <div></div>
           {/* END LOGO */}
 
           <div className="menu">
@@ -69,7 +60,7 @@ const Sidebar = () => {
                 <li key={item.id} onClick={handleClick}>
                   <Link
                     className={`${
-                      isActiveLink(item.routePath, router) ? "active " : ""
+                      isActiveLink(item.routePath, router) ? 'active ' : ''
                     }`}
                     href={item.routePath}
                   >

@@ -2,17 +2,17 @@ import React from 'react';
 
 const Intro = () => {
   const introContent = {
-    image: '/img/me/profile.jpg',
-    name: 'Janet Ogenyi.',
+    image: '/img/me/profile_dark.jpg',
+    name: 'Janet Ogenyi',
     designation: 'Software Engineer',
     text: (
       <>
         <p>
-          I'm a passionate software engineer based in Lagos, Nigeria. I combine
-          my technical skills with a focus on user experience to create
-          solutions that are both functional and delightful to use. My core
-          values of growth, honesty & transparency, and kindness & empathy guide
-          my approach to every project.
+          A passionate software engineer based in Lagos, Nigeria. I combine my
+          technical skills with a focus on user experience to create solutions
+          that are both functional and delightful to use. My core values of
+          growth, honesty & transparency, and kindness & empathy guide my
+          approach to every project.
         </p>
         <p>
           I am dedicated to the open-source community, where I collaborate on
@@ -25,7 +25,7 @@ const Intro = () => {
           playing badminton and swimming.
         </p>
         <p>
-          Thank you for your time! I'm eager to connect and explore how we can
+          Thank you for your time! eager to connect and explore how we can
           collaborate on building impactful solutions together.
         </p>
       </>

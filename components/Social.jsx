@@ -1,5 +1,7 @@
 import React from 'react';
 
+const mailtoLink = `mailto:${'janeteneogenyi@gmail.com'}`;
+
 const SocialShare = [
   {
     iconName: 'github',
@@ -12,7 +14,7 @@ const SocialShare = [
   { iconName: 'twitter-x', link: 'https://twitter.com/Jane_eniie' },
   {
     iconName: 'envelope-fill',
-    link: 'https://www.instagram.com/',
+    link: mailtoLink,
   },
 ];
 

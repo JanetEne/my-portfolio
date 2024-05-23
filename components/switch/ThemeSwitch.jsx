@@ -1,7 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { useTheme } from "next-themes";
+'use client';
+import { useEffect, useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
+import { useTheme } from 'next-themes';
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -21,10 +21,10 @@ const ThemeSwitch = () => {
       <label
         className="theme-switcher-label"
         onClick={() => {
-          setTheme(resolvedTheme === "dark" ? "light" : "dark");
+          setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
         }}
       >
-        {resolvedTheme === "dark" ? <FaSun /> : <FaMoon />}
+        {resolvedTheme === 'dark' ? <FaSun /> : <FaMoon />}
       </label>
     </>
   );
