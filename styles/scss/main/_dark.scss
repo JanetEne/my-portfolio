@@ -122,6 +122,7 @@
     filter: invert(0.8);
   }
 }
+
 .dark .tokyo_tm_all_wrap .leftpart img {
   filter: invert(1);
 }
@@ -220,130 +221,12 @@
 .dark .tokyo_tm_info ul li a:hover {
   color: #fff;
 }
-.dark .tokyo_tm_contact .fields ul li input {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-.dark .tokyo_tm_contact .fields .last textarea {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-.dark .tokyo_tm_contact .fields ul li input:focus {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-}
-.dark .tokyo_tm_contact .fields textarea:focus {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  color: #fff;
-}
 
 .dark .footer-wrapper {
   background: #000;
 }
 .dark .footer-wrapper .copyright a {
   color: #dedede;
-}
-
-.dark .tokyo_tm_contact .fields textarea {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  font-style: italic;
-}
-
-.dark .tokyo_tm_news ul li .details {
-  background-color: #323232;
-}
-.dark .tokyo_tm_news ul li .details .date {
-  color: #bbb;
-}
-.dark .tokyo_tm_news ul li .details .title {
-  color: #fff;
-}
-.dark .tokyo_tm_read_more .read-more {
-  color: #fff;
-}
-.dark .tokyo_tm_read_more .read-more:before {
-  background-color: #fff;
-}
-.dark .tokyo_tm_read_more .read-more span {
-  background-color: transparent;
-}
-.dark .tokyo_tm_news ul li .list_inner {
-  box-shadow: 0 0 15px #252525;
-}
-
-.dark .tokyo_tm_news ul li .image {
-  background: #111;
-}
-
-.dark {
-  .tooltip-wrapper {
-    h5 {
-      color: #000 !important;
-    }
-  }
-  .mymodal {
-    border: none;
-    background: #101010;
-  }
-  .box_inner {
-    background: #151515;
-    overflow-y: initial;
-  }
-  .description_wrap .image {
-    z-index: initial;
-  }
-  .tokyo_tm_modalbox {
-    .main_details .detailbox .first {
-      color: #fff;
-    }
-    li .svg {
-      filter: invert(1);
-    }
-  }
-  .social {
-    margin-left: -5px;
-    li .svg {
-      transition: 0.3s;
-    }
-  }
-  .news_share ul li .svg {
-    filter: invert(1);
-  }
-  .tokyo_tm_modalbox_about .box-inner {
-    background: #151515;
-    .about_title h3 {
-      color: #fff;
-    }
-    .progress_inner > span {
-      color: #bbb;
-    }
-    .progress_inner .background .bar_in {
-      background: #bbb;
-    }
-    .list_inner {
-      border: 1px solid rgba(255, 255, 255, 0.5);
-    }
-    .partners .slick-list .slick-slide li img {
-      filter: invert(1);
-      background: #fff;
-    }
-  }
-
-  .tokyo_tm_modalbox_news {
-    .descriptions .bigger,
-    .date,
-    .date a {
-      color: #bbb;
-    }
-    .main_content {
-      .icon .svg {
-        filter: invert(1);
-      }
-      .news_share span {
-        color: #fff;
-      }
-    }
-  }
 }
 
 .dark .tokyo_tm_about .about_title {
@@ -360,18 +243,6 @@
   color: #000;
 }
 
-.dark .tokyo_tm_progressbox {
-  background: #000;
-}
-.dark .progress_inner > span {
-  color: #efefef;
-}
-.dark .progress_inner .background {
-  background: #444;
-}
-.dark .progress_inner .background .bar_in {
-  background: #7b7b7b;
-}
 .dark .tokyo_tm_resumebox {
   background: #000;
 }

@@ -1,8 +1,9 @@
-import Contact from "@/components/contact/Contact";
-import Sidebar from "@/components/sidebar/Sidebar";
+import Contact from '@/components/contact/Contact';
+import Sidebar from '@/components/sidebar/Sidebar';
 export const metadata = {
-  title: "Contact || Tokyo - Personal Portfolio React Nextjs Template",
+  title: 'Contact - Janet Ogenyi',
 };
+
 const index = () => {
   return (
     <>

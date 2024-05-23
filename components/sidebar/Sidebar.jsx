@@ -18,18 +18,6 @@ const Sidebar = () => {
     <>
       <div className="header">
         <div className="header-inner">
-          <div className="logo">
-            <Link className="navbar-brand" href="/">
-              <Image
-                width={145}
-                height={45}
-                src="/img/me/Janet-logo.png"
-                alt="brand"
-              />
-            </Link>
-          </div>
-          {/* End logo */}
-
           <div className="my_trigger" onClick={handleClick}>
             <div
               className={

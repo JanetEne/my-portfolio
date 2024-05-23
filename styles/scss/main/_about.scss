@@ -110,71 +110,12 @@
 .tokyo_tm_info ul li a:hover {
     color: #000;
 }
-.tokyo_tm_progressbox {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    background-color: #fff;
-    padding: 93px 0px 100px 0px;
-}
-.tokyo_tm_progressbox .in {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    display: flex;
-}
-.tokyo_tm_progressbox .left {
-    width: 50%;
-    padding-right: 50px;
-}
-.tokyo_tm_progressbox .right {
-    width: 50%;
-    padding-left: 50px;
-}
+
 .tokyo_progress {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
-}
-.progress_inner {
-    width: 100%;
-    margin-bottom: 17px;
-}
-.progress_inner:last-child {
-    margin-bottom: 0px;
-}
-.progress_inner > span {
-    margin: 0px 0px 5px 0px;
-    width: 100%;
-    display: block;
-    text-align: left;
-    color: #000;
-}
-.progress_inner span.number {
-    float: right;
-}
-.progress_inner .background {
-    background: rgba(0, 0, 0, 0.09);
-    width: 100%;
-    min-width: 100%;
-    position: relative;
-    height: 3px;
-}
-.progress_inner .background .bar_in {
-    background: #000;
-    overflow: hidden;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-}
-.progress_inner .background .bar {
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 .tokyo_tm_skillbox {
     width: 100%;
@@ -458,18 +399,6 @@
         padding-right: 0px;
     }
     .tokyo_tm_short_info .right {
-        width: 100%;
-        padding-left: 0px;
-    }
-    .tokyo_tm_progressbox .in {
-        flex-direction: column;
-    }
-    .tokyo_tm_progressbox .in .left {
-        width: 100%;
-        padding-right: 0px;
-        margin-bottom: 60px;
-    }
-    .tokyo_tm_progressbox .in .right {
         width: 100%;
         padding-left: 0px;
     }

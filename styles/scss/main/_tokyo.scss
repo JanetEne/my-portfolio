@@ -730,58 +730,6 @@ h6 {
   padding-top: 33px;
 }
 
-.progress_inner {
-  width: 100%;
-  margin-bottom: 17px;
-}
-
-.progress_inner:last-child {
-  margin-bottom: 0px;
-}
-
-.progress_inner>span {
-  margin: 0px 0px 5px 0px;
-  width: 100%;
-  display: block;
-  text-align: left;
-  color: #000;
-  font-style: italic;
-}
-
-.progress_inner span.number {
-  float: right;
-}
-
-.progress_inner .background {
-  background: rgba(0, 0, 0, 0.09);
-  width: 100%;
-  min-width: 100%;
-  position: relative;
-  height: 3px;
-}
-
-.progress_inner .background .bar_in {
-  height: 100%;
-  background: #000;
-  width: 0px;
-  overflow: hidden;
-}
-
-.progress_inner .background .bar {
-  width: 100%;
-  height: 100%;
-}
-
-.progress_inner .background .bar.open {
-  -webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* Safari 4+ */
-  -moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* Fx 5+ */
-  animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* IE 10+ */
-  width: 100%;
-}
-
 @-webkit-keyframes wow {
   0% {
     width: 0%;
@@ -1010,21 +958,21 @@ h6 {
 }
 
 .tokyo_tm_portfolio .list_container .project_details h5 {
- font-size: 20px;
+  font-size: 20px;
 }
 
 .tokyo_tm_portfolio .list_container .project_details small {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
- }
+}
 
- .tokyo_tm_portfolio .list_container .project_details p {
+.tokyo_tm_portfolio .list_container .project_details p {
   font-size: 12px;
   font-weight: 600;
   padding-top: 12px;
   line-height: 16px;
- }
+}
 
 .dark .tokyo_tm_portfolio .portfolio_list {
   list-style-type: none;
@@ -1719,91 +1667,53 @@ body.modal {
   padding: 100px 0px 100px 0px;
 }
 
-.tokyo_tm_contact .map_wrap {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  margin-bottom: 50px;
-}
-
-.tokyo_tm_contact .map_wrap .map>div {
-  height: 400px !important;
-  width: 100% !important;
-}
-
-.tokyo_tm_contact .map_wrap .map iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.tokyo_tm_contact .fields {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-}
-
-.tokyo_tm_contact .fields .first {
-  width: 100%;
-  float: left;
-}
-
-.tokyo_tm_contact .fields ul {
+.tokyo_tm_contact .contact_links {
   margin: 0px;
   list-style-type: none;
 }
 
-.tokyo_tm_contact .fields ul li {
-  width: 100%;
-  margin: 0px 0px 30px 0px;
-  float: left;
+.tokyo_tm_contact .contact_links {
+  margin: 0px 20px 0px 0px;
+  display: inline-flex;
 }
 
-.tokyo_tm_contact .fields ul li input {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: transparent;
-  font-style: italic;
+.tokyo_tm_contact .contact_links a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
 }
 
-.tokyo_tm_contact .fields ul li input:focus {
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.tokyo_tm_contact .contact_links a:hover {
+  filter: opacity(0.7);
+  transform: translateY(-5px);
 }
 
-.tokyo_tm_contact .fields textarea {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  height: 120px;
-  resize: none;
-  background-color: transparent;
+.tokyo_tm_contact .contact_links .svg {
+  width: 17px;
+  height: 17px;
 }
 
-.tokyo_tm_contact .fields textarea:focus {
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.dark .tokyo_tm_contact .svg {
+  color: #fff;
 }
 
-.tokyo_tm_contact .empty_notice {
-  color: #f52225;
-  margin-bottom: 7px;
-  display: none;
-  text-align: left;
-  font-weight: 500;
+.dark .tokyo_tm_contact a {
+  filter: invert(1);
+
+  &:hover {
+    filter: invert(0.8);
+  }
 }
 
-.tokyo_tm_contact ul li span {
-  color: #f52225;
-  text-align: left;
-  font-weight: 500;
+.tokyo_tm_contact .contact_content p {
+  margin-bottom: 10px;
 }
 
-.tokyo_tm_contact .returnmessage {
-  color: #3a00ff;
-  margin-bottom: 7px;
-  text-align: left;
-  font-weight: 500;
+.tokyo_tm_contact .contact_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
 }
 
 /*---------------------------------------------------*/
@@ -1811,7 +1721,7 @@ body.modal {
 /*---------------------------------------------------*/
 
 .tokyo_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
-  display: none;
+  display: block;
 }
 
 .mouse-cursor {

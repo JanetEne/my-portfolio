@@ -1,48 +1,8 @@
-"use client";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Map from "../Map";
+'use client';
+import Link from 'next/link';
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
-      .then(
-        (result) => {
-          toast.success("Message Sent Successfully!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          document.getElementById("myForm").reset();
-        },
-        (error) => {
-          toast.error("Ops Message Not Sent!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
-  };
+  const mailtoLink = `mailto:${'janeteneogenyi@gmail.com'}`;
 
   return (
     <>
@@ -56,55 +16,23 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="fields">
-            <form
-              className="contact_form"
-              id="myForm"
-              ref={form}
-              onSubmit={sendEmail}
-            >
-              <div className="first">
-                <ul>
-                  <li>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      required
-                    />
-                  </li>
-                  {/* END FIRST NAME */}
+          <div className="contact_content">
+            <p>
+              I'm always interested in hearing about new projects, opportunities
+              to collaborate, or simply connecting with fellow tech enthusiasts.
+              Feel free to reach out to me
+            </p>
 
-                  <li>
-                    <input
-                      type="email"
-                      name="user_email"
-                      placeholder="Email"
-                      required
-                    />
-                  </li>
-                  {/* END EMAIL */}
+            <div className="contact_links">
+              <Link href="tel:+2348164400387">
+                <img src="/img/svg/social/telephone.svg" alt="telephone" />
+              </Link>
 
-                  <li>
-                    <textarea
-                      name="message"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </li>
-                  {/* END SUBJECT MESSAGE */}
-                </ul>
-              </div>
-              <div className="tokyo_tm_button">
-                <button type="submit" className="ib-button">
-                  Send Message
-                </button>
-              </div>
-              {/* END SUBMIT BUTTON */}
-            </form>
-            {/* END FORM */}
+              <Link href={mailtoLink}>
+                <img src="/img/svg/social/envelope-fill.svg" alt="envelope" />
+              </Link>
+            </div>
           </div>
-          {/* END FIELDS */}
         </div>
       </div>
       {/* END COTACT */}

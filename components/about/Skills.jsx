@@ -14,6 +14,7 @@ const Skills = () => {
         'Nextjs',
         'React Native',
         'Vite',
+        'Redux',
         'React/Tanstack Query',
         'Tailwind CSS',
         'SCSS',
