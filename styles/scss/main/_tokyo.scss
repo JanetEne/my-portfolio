@@ -1681,6 +1681,8 @@ body.modal {
   text-decoration: none;
   color: #000;
   transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .tokyo_tm_contact .contact_links a:hover {
@@ -1691,6 +1693,10 @@ body.modal {
 .tokyo_tm_contact .contact_links .svg {
   width: 17px;
   height: 17px;
+}
+
+.tokyo_tm_contact .contact_links span {
+ margin-left: 18px;
 }
 
 .dark .tokyo_tm_contact .svg {
@@ -1706,14 +1712,13 @@ body.modal {
 }
 
 .tokyo_tm_contact .contact_content p {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .tokyo_tm_contact .contact_links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px
+  flex-direction: column;
+  gap: 14px;
 }
 
 /*---------------------------------------------------*/

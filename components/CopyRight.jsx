@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const CopyRight = () => {
+  const today = new Date();
+  const day = today.toLocaleDateString('default', { weekday: 'long' });
+
   return (
     <div className="copyright">
       <p>
-        &copy; {new Date().getFullYear()} Janet Ogenyi
+        Janet Ogenyi <span> . </span> @ {today.getFullYear()}
       </p>
     </div>
   );
