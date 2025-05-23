@@ -3,6 +3,7 @@
 import Intro from './Intro';
 import Skills from './Skills';
 import Resume from './Resume';
+import Link from 'next/link';
 
 const AboutMain = () => {
   return (
@@ -23,9 +24,14 @@ const AboutMain = () => {
           {/* End personal info */}
 
           <div className="tokyo_tm_button" data-position="left">
-            <a href="/cv/Janet - CV.pdf" download>
-              <span>Download CV</span>
-            </a>
+            <Link
+              href={
+                'https://docs.google.com/document/d/14z--NbEvhJvWXaU7xbkodM4-mNIYGtVSHaL8s-uULOQ/edit?usp=sharing'
+              }
+              target="_blank"
+            >
+              <span>Resume</span>
+            </Link>
           </div>
         </div>
       </div>
