@@ -15,26 +15,14 @@ const Resume = () => {
         },
         {
           id: 2,
-          year: '2022 - 2022',
+          year: '2022 - 2023',
           institute: 'Viwlo',
           degree: 'Frontend Engineer',
         },
       ],
     },
-    {
-      id: 1,
-      colClass: 'right',
-      title: 'Education',
-      resume: [
-        {
-          id: 1,
-          year: '2014 - 2018',
-          institute: 'Benue State University',
-          degree: 'Bachelors Degree',
-        },
-      ],
-    },
   ];
+
   return (
     <>
       {resumeContent.map((item) => (

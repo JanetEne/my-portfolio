@@ -21,6 +21,8 @@ const Skills = () => {
         'Styled Components',
         'Nodejs',
         'Git',
+        'SEO',
+        'PWAs',
       ],
     },
   ];

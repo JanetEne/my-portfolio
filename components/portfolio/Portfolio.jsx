@@ -38,6 +38,13 @@ const Portfolio = () => {
       linkTitle: 'hccr.gov.ng',
     },
     {
+      title: 'Truparse',
+      tools: 'NextJs, TailwindCss, Typescript',
+      description: 'Enabling individuals and businesses to thrive.',
+      link: 'https://truparse.com/',
+      linkTitle: 'truparse.com',
+    },
+    {
       title: 'Job Lynk',
       tools: 'NextJs, TailwindCss, Typescript',
       description:
